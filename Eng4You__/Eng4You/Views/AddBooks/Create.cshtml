@@ -1,0 +1,134 @@
+﻿@model Eng4You.Models.AddBooks
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "AddBooks", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>AddBooks</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="col-md-12">
+        <div class="form-group">
+            <i class="fas fa-image mb-4" style="font-size: 18px; color: #ffcc00;"></i>
+            <label class="label" for="FrontBookImageinEnglish" style="color: black;">@Eng4You.Resources.Resource.Upload_Image_Section</label>
+            <input type="file" id="ImageFileBookEN" name="ImageFileBookEN" class="form-control" style="border: none; height: 57px;" required>
+        </div>
+    </div>
+
+
+    <div class="col-md-12">
+        <div class="form-group">
+            <i class="fas fa-image mb-4" style="font-size: 18px; color: #ffcc00;"></i>
+            <label class="label" for="FrontBookImageinArabic" style="color: black;">@Eng4You.Resources.Resource.Upload_Image_Section</label>
+            <input type="file" id="ImageFileBookAR" name="ImageFileBookAR" class="form-control" style="border: none; height: 57px;" required>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="form-group">
+            <i class="fas fa-image mb-4" style="font-size: 18px; color: #ffcc00;"></i>
+            <label class="label" for="FrontBookImageinTurkish" style="color: black;">@Eng4You.Resources.Resource.Upload_Image_Section</label>
+            <input type="file" id="ImageFileBookTR" name="ImageFileBookTR" class="form-control" style="border: none; height: 57px;" required>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="form-group">
+            <i class="fas fa-image mb-4" style="font-size: 18px; color: #ffcc00;"></i>
+            <label class="label" for="BackBookImage" style="color: black;">@Eng4You.Resources.Resource.Upload_Image_Section</label>
+            <input type="file" id="ImageFileBookBack" name="ImageFileBookBack" class="form-control" style="border: none; height: 57px;" required>
+        </div>
+    </div>
+
+  
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.UrlSeeBookinEnglish, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.UrlSeeBookinEnglish, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.UrlSeeBookinEnglish, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.UrlSeeBookinArabic, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.UrlSeeBookinArabic, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.UrlSeeBookinArabic, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.UrlSeeBookinTurkish, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.UrlSeeBookinTurkish, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.UrlSeeBookinTurkish, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.BookDescriptioninEnglish, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.BookDescriptioninEnglish, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.BookDescriptioninEnglish, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.BookDescriptioninArabic, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.BookDescriptioninArabic, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.BookDescriptioninArabic, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.BookDescriptioninTurkish, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.BookDescriptioninTurkish, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.BookDescriptioninTurkish, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.AoutherNameinEnglish, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.AoutherNameinEnglish, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.AoutherNameinEnglish, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.AoutherNameinArabic, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.AoutherNameinArabic, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.AoutherNameinArabic, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.AoutherNameinTurkish, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.AoutherNameinTurkish, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.AoutherNameinTurkish, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

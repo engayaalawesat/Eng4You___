@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="(+972) 0512532477" xml:space="preserve">
+    <value>(+972) 0512532477</value>
+  </data>
+  <data name=", who is the responsible for the software department" xml:space="preserve">
+    <value>yazılım departmanından sorumludur</value>
+  </data>
+  <data name="150" xml:space="preserve">
+    <value>150</value>
+  </data>
+  <data name="24/24" xml:space="preserve">
+    <value>24/24</value>
+  </data>
+  <data name="5:00PM" xml:space="preserve">
+    <value>5:00ÖS</value>
+  </data>
+  <data name="95" xml:space="preserve">
+    <value>95</value>
+  </data>
+  <data name="9:00AM" xml:space="preserve">
+    <value>9:00ÖÖ</value>
+  </data>
+  <data name="A cyber security engineer, who is the responsible for the security department" xml:space="preserve">
+    <value>Güvenlik departmanından sorumlu bir siber güvenlik mühendisi</value>
+  </data>
+  <data name="a manager of its software department." xml:space="preserve">
+    <value>patronu ve sahibi</value>
+  </data>
+  <data name="Abdallah Abuali," xml:space="preserve">
+    <value>Abdallah Abuali,</value>
+  </data>
+  <data name="About Us" xml:space="preserve">
+    <value>Hakkımızda</value>
+  </data>
+  <data name="Add A New Section" xml:space="preserve">
+    <value>Yeni Bölüm Ekle</value>
+  </data>
+  <data name="Add Section" xml:space="preserve">
+    <value>Bölüm Ekle</value>
+  </data>
+  <data name="Administrative assistant at" xml:space="preserve">
+    <value>Yönetici Asistanı</value>
+  </data>
+  <data name="AE" xml:space="preserve">
+    <value>Mimar</value>
+  </data>
+  <data name="and discovering security vulnerabilities in everything related to" xml:space="preserve">
+    <value>ve ilgili her şeydeki güvenlik açıklarını keşfetme </value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>Arapça</value>
+  </data>
+  <data name="Architecture Engineering" xml:space="preserve">
+    <value>Mimari Mühendislik</value>
+  </data>
+  <data name="Are We" xml:space="preserve">
+    <value>Kimiz</value>
+  </data>
+  <data name="Aya AL_Awesat," xml:space="preserve">
+    <value>Aya AL_Awesat,</value>
+  </data>
+  <data name="Books" xml:space="preserve">
+    <value>Kitaplar</value>
+  </data>
+  <data name="Boss and owner of" xml:space="preserve">
+    <value>Yazılım departmanının yöneticisi, olan</value>
+  </data>
+  <data name="Bshar Awad," xml:space="preserve">
+    <value>Bshar Awad,</value>
+  </data>
+  <data name="Call Us" xml:space="preserve">
+    <value>Bizi Arayın</value>
+  </data>
+  <data name="Cars Engineering" xml:space="preserve">
+    <value>Arabalar Mühendisliği</value>
+  </data>
+  <data name="Cars Engineering_" xml:space="preserve">
+    <value>Arabalar Mühendisliği</value>
+  </data>
+  <data name="Civil Engineering" xml:space="preserve">
+    <value>İnşaat mühendisliği</value>
+  </data>
+  <data name="Computer Engineering" xml:space="preserve">
+    <value>Bilgisayar Mühendisliği</value>
+  </data>
+  <data name="Confirm Delete Section" xml:space="preserve">
+    <value>Bölümü Silmeyi Onayla</value>
+  </data>
+  <data name="Contact home" xml:space="preserve">
+    <value>Bize Ulaşın</value>
+  </data>
+  <data name="Contact us through:" xml:space="preserve">
+    <value>Bize şu şekilde ulaşın:</value>
+  </data>
+  <data name="Contact us to help you..." xml:space="preserve">
+    <value>Bize ulaşın size yardımcı olalım...</value>
+  </data>
+  <data name="Contact Us..." xml:space="preserve">
+    <value>Bize Ulaşın...</value>
+  </data>
+  <data name="copyright" xml:space="preserve">
+    <value>Telif Hakkı</value>
+  </data>
+  <data name="COUNTRIES EXPERIENCE" xml:space="preserve">
+    <value>ÜLKELERİN DENEYİMİ</value>
+  </data>
+  <data name="Courses" xml:space="preserve">
+    <value>Dersler</value>
+  </data>
+  <data name="CS" xml:space="preserve">
+    <value>SG</value>
+  </data>
+  <data name="Cyber Security" xml:space="preserve">
+    <value>Siber Güvenlik</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Günler</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Silmek</value>
+  </data>
+  <data name="Delete Section" xml:space="preserve">
+    <value>Bölümü Sil</value>
+  </data>
+  <data name="Develop your skills and learning in an engineering major" xml:space="preserve">
+    <value>Bizimle</value>
+  </data>
+  <data name="dir" xml:space="preserve">
+    <value>ltr</value>
+  </data>
+  <data name="Edit Created Sectione" xml:space="preserve">
+    <value>Oluşturulan Bölümü Düzenle</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-Posta</value>
+  </data>
+  <data name="Email Us" xml:space="preserve">
+    <value>Bize E-Posta Gönderin</value>
+  </data>
+  <data name="Eng" xml:space="preserve">
+    <value>Mün</value>
+  </data>
+  <data name="Engineering Books" xml:space="preserve">
+    <value>Mühendislik Kitapları</value>
+  </data>
+  <data name="Engineering Majors In" xml:space="preserve">
+    <value>Mühendislik Bölümleri</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>İngilizce</value>
+  </data>
+  <data name="Engr" xml:space="preserve">
+    <value>Müh</value>
+  </data>
+  <data name="First Name" xml:space="preserve">
+    <value>İlk Adı</value>
+  </data>
+  <data name="for" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="For All Majors" xml:space="preserve">
+    <value>Tüm Bölümlere Uygun</value>
+  </data>
+  <data name="for__" xml:space="preserve">
+    <value>olarak bir mühendislik dalında becerilerinizi geliştirin ve öğrenin</value>
+  </data>
+  <data name="free" xml:space="preserve">
+    <value>ücretsiz</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Saat</value>
+  </data>
+  <data name="HOURS OF WROK" xml:space="preserve">
+    <value>ÇALIŞMA SAATİ</value>
+  </data>
+  <data name="in" xml:space="preserve">
+    <value>içinde</value>
+  </data>
+  <data name="info.eng4you@gmail.com" xml:space="preserve">
+    <value>info.eng4you@gmail.com</value>
+  </data>
+  <data name="is dedicated to catering to engineers and engineering enthusiasts alike, by offering free courses across various engineering disciplines in a seamless and user-friendly manner. Moreover, our extensive book library encompasses resources covering all branches of engineering, additionally, we highlight the achievements and successes of engineers from diverse backgrounds and nationalities, fostering a rich and inclusive engineering learning environment." xml:space="preserve">
+    <value>çeşitli mühendislik disiplinlerinde kesintisiz ve kullanıcı dostu bir şekilde ücretsiz kurslar sunarak hem mühendislere hem de mühendislik meraklılarına hizmet vermeye kendini adamıştır. Ayrıca kapsamlı kitap kütüphanemiz, mühendisliğin tüm dallarını kapsayan kaynakları kapsar; ayrıca, zengin ve kapsayıcı bir mühendislik öğrenim ortamını teşvik ederek, farklı geçmişlere ve milletlere sahip mühendislerin başarılarını ve başarılarını öne çıkarırız.</value>
+  </data>
+  <data name="Jinan Zahaika," xml:space="preserve">
+    <value>Jinan Zahaika,</value>
+  </data>
+  <data name="Last Name" xml:space="preserve">
+    <value>Soyisim</value>
+  </data>
+  <data name="ME" xml:space="preserve">
+    <value>MM</value>
+  </data>
+  <data name="Mechanical engineer, who is the responsible for the mechanical department" xml:space="preserve">
+    <value>Makine bölümünden sorumlu makine mühendisi </value>
+  </data>
+  <data name="MENU" xml:space="preserve">
+    <value>MENÜ</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>İleti</value>
+  </data>
+  <data name="Middle East, Turkiye, USA" xml:space="preserve">
+    <value>Ortadoğu, Türkiye, Amerika</value>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>Dakika</value>
+  </data>
+  <data name="Page not found" xml:space="preserve">
+    <value>Sayfa bulunamadı</value>
+  </data>
+  <data name="Programs" xml:space="preserve">
+    <value>Programlar</value>
+  </data>
+  <data name="Providing courses and books in all engineering majors" xml:space="preserve">
+    <value>Tüm mühendislik dallarında ders ve kitapların sağlanması</value>
+  </data>
+  <data name="Providing programmes for free" xml:space="preserve">
+    <value>Programların ücretsiz sağlanması</value>
+  </data>
+  <data name="Publishing all engineering opportunities you need for all majors" xml:space="preserve">
+    <value>Tüm ana dallar için ihtiyacınız olan tüm mühendislik fırsatlarını yayınlamak</value>
+  </data>
+  <data name="Read More" xml:space="preserve">
+    <value>Devamını Oku</value>
+  </data>
+  <data name="Salam Qarish," xml:space="preserve">
+    <value>Salam Qarish,</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Kaydetmek</value>
+  </data>
+  <data name="SE" xml:space="preserve">
+    <value>YM</value>
+  </data>
+  <data name="Seconds" xml:space="preserve">
+    <value>Saniye</value>
+  </data>
+  <data name="Section Image" xml:space="preserve">
+    <value>Bölüm Resmi</value>
+  </data>
+  <data name="Section Name In Arabic" xml:space="preserve">
+    <value>Arapça Bölüm Adı</value>
+  </data>
+  <data name="Section Name In English" xml:space="preserve">
+    <value>İngilizce Bölüm Adı</value>
+  </data>
+  <data name="Section Name In Turkish" xml:space="preserve">
+    <value>Türkçe Bölüm Adı</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Göndermek</value>
+  </data>
+  <data name="Send us a message for any questions you have!!! You will be reply from the support team as soon as you receive the message" xml:space="preserve">
+    <value>Herhangi bir sorunuz için bize bir mesaj gönderin!!! Mesajı aldığınız anda destek ekibinden cevap alacaksınız</value>
+  </data>
+  <data name="Show Books" xml:space="preserve">
+    <value>Kitapları Göster</value>
+  </data>
+  <data name="Software Engineering" xml:space="preserve">
+    <value>Yazılım Mühendisliği</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="Success Stories" xml:space="preserve">
+    <value>Başarı Öyküleri</value>
+  </data>
+  <data name="Talking about the successes of engineers" xml:space="preserve">
+    <value>Mühendislerin başarılarından bahsetmek</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Takım</value>
+  </data>
+  <data name="TOTAL PROJECTS" xml:space="preserve">
+    <value>TOPLAM PROJELER</value>
+  </data>
+  <data name="Turkish" xml:space="preserve">
+    <value>Türkçe</value>
+  </data>
+  <data name="Update Image Section" xml:space="preserve">
+    <value>Resim Bölümünü Güncelle</value>
+  </data>
+  <data name="Update Section Name In Arabic" xml:space="preserve">
+    <value>Arapça Bölüm Adını Güncelle</value>
+  </data>
+  <data name="Update Section Name In English" xml:space="preserve">
+    <value>İngilizce Bölüm Adını Güncelle</value>
+  </data>
+  <data name="Update Section Name In Turkish" xml:space="preserve">
+    <value>Türkçe Bölüm Adını Güncelle</value>
+  </data>
+  <data name="Upload Image Section" xml:space="preserve">
+    <value>Resim Bölümünü Yükle</value>
+  </data>
+  <data name="We are dedicated to catering to engineers and engineering enthusiasts a like, display life's engineering challenges in an easy and engaging manner, and providing effective solutions. For further information on our services..." xml:space="preserve">
+    <value>Mühendisler ve mühendislik meraklılarına hitap etmeye, yaşamın mühendislik zorluklarını kolay ve ilgi çekici bir şekilde sergilemeye ve etkili çözümler sunmaya kendimizi adadık. Hizmetlerimiz hakkında daha fazla bilgi için...</value>
+  </data>
+  <data name="We Help To Get The Best Engineering Services For All Majors" xml:space="preserve">
+    <value>Tüm Bölümler İçin En İyi Mühendislik Hizmetlerini Almanıza Yardımcı Oluyoruz</value>
+  </data>
+  <data name="We're Coming Soon" xml:space="preserve">
+    <value>Yakında Geliyoruz</value>
+  </data>
+  <data name="We're working hard to give you the best experience" xml:space="preserve">
+    <value>Size en iyi deneyimi sunmak için çok çalışıyoruz</value>
+  </data>
+  <data name="Who" xml:space="preserve">
+    <value>Biz  </value>
+  </data>
+  <data name="Who is the responsible for the design and architecture department in" xml:space="preserve">
+    <value>Tasarım ve mimarlık bölümünden kim sorumlu</value>
+  </data>
+  <data name="Working Hours" xml:space="preserve">
+    <value>Çalışma Saatleri</value>
+  </data>
+  <data name="You" xml:space="preserve">
+    <value>Sen</value>
+  </data>
+  <data name="You tr aya" xml:space="preserve">
+    <value>Sen'in</value>
+  </data>
+  <data name="You Tr Bshar" xml:space="preserve">
+    <value>Sen'da</value>
+  </data>
+  <data name="You tr jinan" xml:space="preserve">
+    <value>Sen'de,</value>
+  </data>
+  <data name="You Tr salam" xml:space="preserve">
+    <value>Sen'de</value>
+  </data>
+</root>

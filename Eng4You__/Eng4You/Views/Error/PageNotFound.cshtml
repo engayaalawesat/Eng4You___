@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Eng4You | Error 404";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 Page with Flickering Light Text Effect - DEMO - wannabedev.io</title>
+    <meta name="description" content="A tutorial on how to quickly create a creative 404 error page template with a flickering light text effect using SVG and GSAP." />
+    <meta name="keywords" content="fullscreen, animation, svg, javascript, gsap, 404, error, hero" />
+    <meta name="author" content="Mirza Hodzic" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="~/css/error.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/css/footer.css" rel="stylesheet">
+</head>
+<body dir="@Eng4You.Resources.Resource.dir">
+    <section class="error-demo" style="background-image: url(/images/bg-error.jpg);">
+        <div class="content">
+
+            <div class="description">
+                <h1 style="color:#fff">Oops,<br>something's<br>gone wrong</h1><br />
+                <p style="color:#fff">Not to worry, why don't you try<br>to contact support Eng<span style="color:#ffcc00">4</span>You!!</p>
+                <div class="links">
+                    <a href="/Home/Contact" class="contact-button">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="error">
+                <svg version="1.1" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+
+                    <defs>
+                        <filter id="gemma">
+                            <feMorphology operator="dilate" radius="0" in="SourceAlpha" result="BEVEL_10" />
+                            <feOffset dx="0.5" dy="-1.5" in="BEVEL_10" result="BEVEL_20" />
+                            <feComposite operator="out" in="BEVEL_10" in2="SourceGraphic" result="BEVEL_30" />
+                            <feFlood flood-color="#333333" result="COLOR-glow" />
+                            <feComposite in="COLOR-glow" in2="BEVEL_30" operator="in" result="BEVEL_40" />
+                            <feMerge result="BEVEL_50">
+                                <feMergeNode in="BEVEL_40" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+
+                        <filter id="gemma-glow">
+                            <feMorphology operator="dilate" radius="0" in="SourceAlpha" result="BEVEL_10" />
+                            <feOffset dx="0.5" dy="-1.5" in="BEVEL_10" result="BEVEL_20" />
+                            <feComposite operator="out" in="BEVEL_10" in2="SourceGraphic" result="BEVEL_30" />
+                            <feFlood flood-color="#dbaf00" result="COLOR-glow" />
+                            <feComposite in="COLOR-glow" in2="BEVEL_30" operator="in" result="BEVEL_40" />
+                            <feMerge result="BEVEL_50">
+                                <feMergeNode in="BEVEL_40" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <g class="filtered">
+                        <text x="52" y="72" font-family="Neoneon" text-anchor="middle" class="glow">404</text>
+                    </g>
+
+                </svg>
+
+                <span class="error-message">@Eng4You.Resources.Resource.Page_not_found</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/easing/easing.min.js"></script>
+    <script src="~/lib/wow/wow.min.js"></script>
+    <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="~/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="~/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/lib/counterup/counterup.min.js"></script>
+    <script src="~/lib/slick/slick.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="~/js/language-select.js"></script>
+    <!-- Template Javascript -->
+    <script src="~/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
+    <script src="~/js/error.js"></script>
+    <script src="~/js/404-animation.js"></script>
+
+
+</body>
+</html>
+

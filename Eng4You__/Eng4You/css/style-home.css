@@ -1,0 +1,112 @@
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #222222;
+	margin: 0;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 60px;
+	margin-bottom: 40px;
+}
+
+	h1 span {
+		background: #ffcc00;
+		color: #222222;
+		display: inline-block;
+		padding-block:7px;
+	}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+h4 {
+	font-size: 15px;
+}
+
+p {
+	font-size: 18px;
+	color: #000;
+	line-height: 2;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.hero-section {
+	height: 960px;
+	background: #ededed;
+	position: relative;
+}
+
+
+
+/*----------------------------------------*/
+/*  Intro Section CSS
+/*----------------------------------------*/
+.intro-text p {
+	margin-bottom: 50px;
+}
+
+
+
+
+@media only screen and (max-width: 1400px) {
+	.promo-box {
+		width: 100%;
+	}
+}
+
+/* Medium screen : 992px. */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+	.hero-right-text {
+		right: 100px;
+	}
+}
+
+/* Tablet :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.hero-section{
+
+		height: 850px;
+	}
+}
+
+/* Large Mobile :480px. */
+@media only screen and (max-width: 767px) {
+	
+	.hero-section {
+		height: auto;
+	}
+}
+
+	

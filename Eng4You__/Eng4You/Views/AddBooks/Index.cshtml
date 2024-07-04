@@ -1,0 +1,107 @@
+﻿@model IEnumerable<Eng4You.Models.AddBooks>
+
+@{
+    ViewBag.Title = "Eng4You | Engineering Books";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FrontBookImageinEnglish)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FrontBookImageinArabic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FrontBookImageinTurkish)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BackBookImage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrlSeeBookinEnglish)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrlSeeBookinArabic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrlSeeBookinTurkish)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookDescriptioninEnglish)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookDescriptioninArabic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BookDescriptioninTurkish)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AoutherNameinEnglish)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AoutherNameinArabic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AoutherNameinTurkish)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <img src="~/Uploads/@Html.DisplayFor(modelItem => item.FrontBookImageinEnglish)" style="width: 150px; height: 150px; border: none; border-radius: 20px;">
+        </td>
+        <td>
+            <img src="~/Uploads/@Html.DisplayFor(modelItem => item.FrontBookImageinArabic)" style="width: 150px; height: 150px; border: none; border-radius: 20px;">
+        </td>
+        <td>
+            <img src="~/Uploads/@Html.DisplayFor(modelItem => item.FrontBookImageinTurkish)" style="width: 150px; height: 150px; border: none; border-radius: 20px;">
+        </td>
+        <td>
+            <img src="~/Uploads/@Html.DisplayFor(modelItem => item.BackBookImage)" style="width: 150px; height: 150px; border: none; border-radius: 20px;">
+        </td>
+        <td>
+            <button type="button" onclick="location.href='@Html.DisplayFor(modelItem => item.UrlSeeBookinEnglish)'">Go To</button>
+        </td>
+        <td>
+            <button type="button" onclick="location.href='@Html.DisplayFor(modelItem => item.UrlSeeBookinArabic)'">Go To</button>
+        </td>
+        <td>
+            <button type="button" onclick="location.href='@Html.DisplayFor(modelItem => item.UrlSeeBookinTurkish)'">Go To</button>
+<td>
+            @Html.DisplayFor(modelItem => item.BookDescriptioninEnglish)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BookDescriptioninArabic)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BookDescriptioninTurkish)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AoutherNameinEnglish)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AoutherNameinArabic)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AoutherNameinTurkish)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+
+<script src="~/js/update-image-major-in-edit-book.js"></script>

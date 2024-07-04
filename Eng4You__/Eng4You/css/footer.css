@@ -1,0 +1,98 @@
+body {
+    color: #666666;
+    background: #ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.footer-content h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    text-align: center;
+    padding-top:3%;
+    color:#000;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+}
+
+.footer-content button {
+    font-size: 18px;
+    background:#000;
+    border-color:#000;
+    border-radius:15px;
+    text-align: center;
+}
+
+
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 27px;
+    padding-bottom: 40px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+    .footer-bottom p {
+        float: left;
+        font-size: 15px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+        color: #ffcc00;
+    }
+
+        .footer-bottom p a {
+            color: #ffcc00;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+
+.footer-content .btn-outline-light {
+    background-color: #000;
+    border: 1px solid #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .btn-outline-light a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-content  .btn-outline-light:hover {
+        background-color: #fff;
+        border-color: #fff;
+    }
+
+    .footer-content .btn-outline-light a:hover {
+            color: #000;
+        }
+
+
+@media (max-width:500px) {
+    .footer-menu ul {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}

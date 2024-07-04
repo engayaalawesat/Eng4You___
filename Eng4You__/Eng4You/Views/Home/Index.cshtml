@@ -1,0 +1,212 @@
+﻿
+@{
+    ViewBag.Title = "Eng4You | Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>How to create a responsive website html css</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="~/lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="~/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="~/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="~/lib/slick/slick.css" rel="stylesheet">
+    <link href="~/lib/slick/slick-theme.css" rel="stylesheet">
+    <link href="~/css/footer.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="~/css/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64d58efce2.js"
+            crossorigin="anonymous"></script>
+    <link href="~/css/alert-send-email.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="~/css/style-home.css" />
+    <link rel="stylesheet" href="~/css/style-services.css" />
+    <link rel="stylesheet" href="~/css/main.css" />
+
+
+
+</head>
+<body>
+
+    <div class="hero-slider" >
+        <!-- Intro -->
+        <section id="intro" class="bg-image">
+
+            <div class="container">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="position:relative;left:4%;">
+
+                    <p dir="@Eng4You.Resources.Resource.dir" style="margin-top: 0; text-align: center; margin-bottom: 0; width: 70%; font-weight: bold; font-size: 26.8px; color: #000; line-height: 1.5">
+                        @Eng4You.Resources.Resource.Develop_your_skills_and_learning_in_an_engineering_major <span style="background-color:#ffcc00;padding:3px">@Eng4You.Resources.Resource.free</span> @Eng4You.Resources.Resource.for__...
+                    </p>
+                    <br />
+                    <div style="position:relative;justify-content:center;left:15%">
+                        <a class="btn btn-primary py-3 px-5 mt-3" style=" border-radius: 15px; font-weight: bold; background-color: #ffcc00; border-color: #ffcc00; color: #000; transition: background-color 0.3s, color 0.3s; "
+                           href="~/Home/Contact"
+                           onmouseover="this.style.borderColor='#fff'; this.style.backgroundColor='#fff'; this.style.color='#000';"
+                           onmouseout="this.style.borderColor='#ffcc00';this.style.backgroundColor='#ffcc00'; this.style.color='#000';">
+                            <i class='fas fa-envelope-open' style='font-size:22px;position:relative;right:4%'></i>
+                            @Eng4You.Resources.Resource.Contact_home
+
+                        </a>
+                    </div>
+                </div>
+                <br />
+                <div class="img" style="width:100%;height:100%"><img src="~/images/home-image.png" alt=""></div>
+
+            </div>
+        </section>
+    </div>
+
+    <br /><br /> <br /><br />
+
+    <!-- Service section start -->
+
+    <div id="services" class="section lb">
+        <div class="container" style="background-color: #000; border-radius: 15px; border-bottom-right-radius:0 ">
+            <div class="text-center" style="padding: 50px;" dir="@Eng4You.Resources.Resource.dir">
+                <h3 class="title-text">
+                    @Eng4You.Resources.Resource.Engineering_Majors_In <span>@Eng4You.Resources.Resource.Eng</span>
+                    <span>@Eng4You.Resources.Resource._for</span>
+                    @Eng4You.Resources.Resource.You
+                </h3>
+            </div><!-- end title -->
+
+            <div class="row" @Eng4You.Resources.Resource.dir>
+                <div class="col-md-4 col-sm-6">
+                    <div class="services-inner-box" style="position:relative;text-align:center">
+                        <div class="ser-icon">
+                            <i style="color: black;" class="fa fa-laptop"></i>
+                        </div>
+                        <h2 style="color:black">@Eng4You.Resources.Resource.Computer_Engineering</h2>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="services-inner-box" style="position:relative;text-align:center">
+                        <div class="ser-icon">
+                            <i style="color: black;" class="fa fa-code"></i>
+                        </div>
+                        <h2 style="color:black">@Eng4You.Resources.Resource.Software_Engineering</h2>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="services-inner-box" style="position:relative;text-align:center">
+                        <div class="ser-icon">
+                            <i style="color: black;" class="fa fa-user-secret"></i>
+                        </div>
+                        <h2 style="color:black">@Eng4You.Resources.Resource.Cyber_Security</h2>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="services-inner-box" style="position:relative;text-align:center">
+                        <div class="ser-icon">
+                            <i style="color: black;" class="fa fa-car"></i>
+                        </div>
+                        <h2 style="color:black">@Eng4You.Resources.Resource.Cars_Engineering</h2>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="services-inner-box" style="position:relative;text-align:center">
+                        <div class="ser-icon">
+                            <i style="color: black;" class="fa fa-building"></i>
+                        </div>
+                        <h2 style="color:black">@Eng4You.Resources.Resource.Architecture_Engineering</h2>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="services-inner-box" style="position:relative;text-align:center">
+                        <div class="ser-icon">
+                            <i style="color: black;" class="fas fa-tools"></i>
+                        </div>
+                        <h2 style="color:black">@Eng4You.Resources.Resource.Civil_Engineering</h2>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+    <!-- Service section end -->
+
+    <br /> <br />
+    <div class="container-xxl py-5" style="background-color:#fff">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="position:relative;padding-bottom:12%">
+                    <div class="about-img" style="height: 500px; width: 600px;">
+                        <img src="~/images/about-home.png" class="img-fluid h-100" alt="img" style="position:relative; left:5%; top:10%">
+                    </div>
+
+                </div>
+                <br /><br /><br />
+                <div dir="@Eng4You.Resources.Resource.dir" class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="color:black;width:100%;margin:auto;position:relative;left:2%;text-align:start">
+                    <h1  class="mb-4" style="color:black;font-size:2.5rem;width:100%;">@Eng4You.Resources.Resource.We_Help_To_Get_The_Best_Engineering_Services_For_All_Majors</h1>
+                    <p>
+                        <i class="fa fa-check  me-3" style="color: #ffcc00"></i>  @Eng4You.Resources.Resource.Providing_programmes_for_free
+                    </p>
+                    <p>
+
+                        <i class="fa fa-check me-3" style="color: #ffcc00"></i>   @Eng4You.Resources.Resource.Talking_about_the_successes_of_engineers
+
+                    </p>
+                    <p>
+
+                        <i class="fa fa-check  me-3" style="color: #ffcc00"></i>   @Eng4You.Resources.Resource.Providing_courses_and_books_in_all_engineering_majors
+
+                    </p>
+
+                    <p>
+                        <i class="fa fa-check  me-3" style="color:#ffcc00"></i> @Eng4You.Resources.Resource.Publishing_all_engineering_opportunities_you_need_for_all_majors
+                    </p>
+                    <a class="btn btn-primary py-3 px-5 mt-3" style="font-weight:bold; border-radius:15px; color:black; border-color:#ffcc00; background-color:#ffcc00;"
+                       href="@Url.Content("~/Home/About")"
+                       onmouseover="this.style.borderColor='#000'; this.style.backgroundColor='#000'; this.style.color='#fff';"
+                       onmouseout="this.style.borderColor='#ffcc00'; this.style.backgroundColor='#ffcc00'; this.style.color='#000';">
+                        @Eng4You.Resources.Resource.Read_More
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="~/js/js-home/bootstrap.min.js"></script>
+    <script src="~/js/js-home/circle-progress.min.js"></script>
+    <script src="~/js/js-home/isotope.pkgd.min.js"></script>
+    <script src="~/js/js-home/jquery-2.1.4.min.js"></script>
+    <script src="~/js/js-home/jquery.owl-filter.js"></script>
+    <script src="~/js/js-home/magnific-popup.min.js"></script>
+    <script src="~/js/js-home/main.js"></script>
+    <script src="~/js/js-home/map.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include SweetAlert library -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="~/js/index.js"></script>
+    <script src="~/js/languages_menu.js"></script>
+    <script src="~/js/translate-name-section.js"></script>
+    <script src="~/js/send-email.js"></script>
+
+</body>

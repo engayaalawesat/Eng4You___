@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Eng4You.Models.Programmes>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FileName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.NemSecProgram.NamSecProgram)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                <button class="btn btn-primary" onclick="startDownloadTimer('@item.FileName')">
+                    @item.FileName
+                </button>
+
+            </td>
+
+            <td>
+                @if (item.NemSecProgram != null)
+                {
+                    @item.NemSecProgram.NamSecProgram
+                }
+                else
+                {
+                    <span class="text-danger">No Program</span>
+                }
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="~/js/swal-alert-counter-programmes.js"></script>

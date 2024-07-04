@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aya AL_Awesat\\source\\repos\\Eng4You__\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCD1A9D-070D-4D27-B8CD-DBE5AA9211FD}|Eng4You\\Eng4You.csproj|c:\\users\\aya al_awesat\\source\\repos\\eng4you__\\eng4you\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3BCD1A9D-070D-4D27-B8CD-DBE5AA9211FD}|Eng4You\\Eng4You.csproj|solutionrelative:eng4you\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Aya AL_Awesat\\source\\repos\\Eng4You__\\Eng4You\\Web.config",
+              "RelativeDocumentMoniker": "Eng4You\\Web.config",
+              "ToolTip": "C:\\Users\\Aya AL_Awesat\\source\\repos\\Eng4You__\\Eng4You\\Web.config",
+              "RelativeToolTip": "Eng4You\\Web.config",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-04T07:53:39.692Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

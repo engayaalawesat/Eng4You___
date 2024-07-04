@@ -1,0 +1,367 @@
+/**
+ * demo.css
+ *
+ * Licensed under the MIT license.
+ * https://opensource.org/license/mit/
+ * 
+ * Copyright 2023, WANNABEDEV
+ * https://wannabedev.io
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
+
+body {
+    color: #666666;
+    background: #ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+body header {
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    top: 48px;
+    left: 10%;
+    z-index: 100;
+}
+
+
+
+body section.error-demo {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover !important;
+}
+
+@media screen and (max-width: 768px) {
+    body section.error-demo {
+        height: auto;
+        padding-bottom: 72px;
+    }
+}
+
+body section.error-demo .content {
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 480px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    overflow: visible;
+    z-index: 3;
+}
+
+@media screen and (max-width: 1300px) {
+    body section.error-demo .content {
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body section.error-demo .content {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        transform: none;
+        padding-top: 72px;
+        text-align: center;
+    }
+}
+
+body section.error-demo .content .description {
+    position: relative;
+    display: block;
+    width: 50%;
+    width: calc( 50% - 32px );
+    height: 100%;
+    overflow: hidden;
+    padding-right: 32px;
+    float: left;
+}
+
+@media screen and (max-width: 768px) {
+    body section.error-demo .content .description {
+        width: 90%;
+        width: calc( 100% - 32px );
+        height: auto;
+        padding: 16px;
+    }
+}
+
+body section.error-demo .content .description h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 64px;
+    line-height: 72px;
+}
+
+@media screen and (max-width: 1300px) {
+    body section.error-demo .content .description h1 {
+        font-size: 44px;
+        line-height: 52px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body section.error-demo .content .description h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+body section.error-demo .content .description p {
+    font-family: "Montserrat", sans-serif;
+    max-width: 420px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+@media screen and (max-width: 768px) {
+    body section.error-demo .content .description p {
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
+
+body section.error-demo .content .description .links {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 36px;
+}
+
+    body section.error-demo .content .description .links a {
+        font-family: "Montserrat", sans-serif;
+        background: transparent;
+        position: relative;
+        display: inline;
+        width: auto;
+        height: auto;
+        font-size: 17px;
+        line-height: 64px;
+        margin-right: 16px;
+        padding: 12px 32px;
+        outline: 0px none;
+        outline: 0px;
+        color: #ffcc00;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 1px solid #ffcc00;
+        border-radius: 32px;
+        font-weight: 400;
+        transition: all 0.3s ease-in-out;
+    }
+
+@media screen and (max-width: 992px) {
+    body section.error-demo .content .description .links a {
+        font-size: 15px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body section.error-demo .content .description .links a {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+body section.error-demo .content .description .links a:hover {
+    background: #dbaf00;
+    color: #FFFFFF;
+}
+
+body section.error-demo .content .error {
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    float: left;
+}
+
+@media screen and (max-width: 768px) {
+    body section.error-demo .content .error {
+        width: 100%;
+    }
+}
+
+body section.error-demo .content .error svg {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: visible;
+}
+
+@media screen and (max-width: 768px) {
+    body section.error-demo .content .error svg {
+        position: relative;
+        width: 280px !important;
+        height: auto;
+    }
+}
+
+body section.error-demo .content .error svg .filtered {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: url(#gemma);
+    opacity: 0.65;
+}
+
+    body section.error-demo .content .error svg .filtered .glow {
+        font-size: 68px;
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.92), 0 0 21px rgba(0, 0, 0, 0.34), 0 0 12px rgba(0, 0, 0, 0.52), 0 0 21px rgba(0, 0, 0, 0.92), 0 0 34px rgba(0, 0, 0, 0.78), 0 0 54px rgba(0, 0, 0, 0.92);
+        fill: #666666;
+    }
+
+@media screen and (max-width: 1300px) {
+    body section.error-demo .content .error svg .filtered .glow {
+        font-size: 54px;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.92), 0 0 15px rgba(0, 0, 0, 0.34), 0 0 6px rgba(0, 0, 0, 0.52), 0 0 15px rgba(0, 0, 0, 0.92), 0 0 21px rgba(0, 0, 0, 0.78), 0 0 21px rgba(0, 0, 0, 0.92);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body section.error-demo .content .error svg .filtered .glow {
+        font-size: 64px;
+    }
+}
+
+body section.error-demo .content .error svg .filtered.glowing {
+    filter: url(#gemma-glow);
+}
+
+    body section.error-demo .content .error svg .filtered.glowing .glow {
+        fill: #dbaf00;
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.42), 0 0 21px rgba(255, 204, 0, 0.42), 0 0 12px rgba(255, 204, 0, 0.58), 0 0 22px rgba(255, 204, 0, 0.84), 0 0 38px rgba(255, 204, 0, 0.88), 0 0 60px #ffcc00;
+    }
+
+@media screen and (max-width: 1300px) {
+    body section.error-demo .content .error svg .filtered.glowing .glow {
+        text-shadow: 0 0 3px rgba(221, 178, 7, 0.92), 0 0 15px rgba(221, 178, 7, 0.34), 0 0 6px rgba(221, 178, 7, 0.52), 0 0 15px rgba(221, 178, 7, 0.92), 0 0 21px rgba(221, 178, 7, 0.78), 0 0 21px rgba(221, 178, 7, 0.92);
+    }
+}
+
+body section.error-demo .content .error span.error-message {
+    color: #666666;
+    font-family: "Neoneon";
+    font-weight: bold;
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.98), 0 0 15px rgba(0, 0, 0, 0.42), 0 0 6px rgba(0, 0, 0, 0.58), 0 0 12px rgba(0, 0, 0, 0.84), 0 0 31px rgba(0, 0, 0, 0.88), 0 0 31px black;
+    opacity: 0.65;
+}
+
+@media screen and (max-width: 1300px) {
+    body section.error-demo .content .error span.error-message {
+        font-size: 54px;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.98), 0 0 15px rgba(0, 0, 0, 0.34), 0 0 6px rgba(0, 0, 0, 0.52), 0 0 15px rgba(0, 0, 0, 0.92), 0 0 21px rgba(0, 0, 0, 0.78), 0 0 21px rgba(0, 0, 0, 0.92);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body section.error-demo .content .error span.error-message {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body section.error-demo .content .error span.error-message {
+        font-size: 32px;
+    }
+}
+
+body section.error-demo::after {
+    background: radial-gradient(circle closest-corner at 70% 50%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0.9) 100%);
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    body section.error-demo::after {
+        height: 100%;
+    }
+}
+
+body section.error-demo::before {
+    background-color: rgba(0, 0, 0, 0.45);
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    body section.error-demo::before {
+        height: 100%;
+    }
+}
+
+body section.error-demo.glowing::before {
+    background-color: rgba(255, 205, 0, 0.25);
+}
+
+body section.error-demo.glowing .content .error span.error-message {
+    color: #dbaf00;
+    text-shadow: 0 0 3px rgba(255, 204, 0, 0.98), 0 0 15px rgba(255, 204, 0, 0.42), 0 0 6px rgba(255, 204, 0, 0.58), 0 0 12px rgba(255, 204, 0, 0.84), 0 0 31px rgba(255, 204, 0, 0.88), 0 0 31px #ffcc00;
+}

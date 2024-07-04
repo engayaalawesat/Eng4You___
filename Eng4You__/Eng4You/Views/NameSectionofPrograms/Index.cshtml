@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Eng4You.Models.NameSectionofProgram>
+@using Microsoft.AspNet.Identity
+@using WebApplication1.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@foreach (var item in Model)
+{
+    <tr>
+
+        <h6 class="mb-3" style="color: black">@item.NameSectonofProgram</h6>
+        
+
+        <a href="~/ListofJobs/Index" style="cursor: pointer;">
+            <h8 class="categoryCount" data-category="@item.NameSectonofProgram" style="font-size:15px">
+            </h8>
+        </a>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+

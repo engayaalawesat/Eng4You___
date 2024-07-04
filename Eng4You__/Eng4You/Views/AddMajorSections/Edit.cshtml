@@ -1,0 +1,119 @@
+﻿@model Eng4You.Models.AddMajorSection
+
+@{
+    ViewBag.Title = "Eng4You | Edit Section";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="~/css/index.css" rel="stylesheet">
+    <link href="~/css/Create-Section.css" rel="stylesheet">
+
+</head>
+
+<header style="width:100%;position:relative;margin:auto; " dir="@Eng4You.Resources.Resource.dir">
+    <div class="item">
+        <div class="cover">
+            <div class="header-content wow fadeInRightBig" data-wo-delay="0.1s" style="left:10%">
+                <div class="line" style="left:4.5%; text-align:center">
+                    <br /><br />
+                    <h2 style="font-weight:bold;font-size:45px;color:#000;">@Eng4You.Resources.Resource.Edit_Created_Sectione...</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<br />
+<br />
+
+@using (Html.BeginForm("Edit", "AddMajorSections", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Id)
+
+<body style="overflow-x: hidden;">
+    <div class="container form-container" class="wow fadeInLeftBig" style="background-color: #fff; border: 5px solid #FFCC00; border-radius: 20px; padding: 22px;">
+        <form method="POST" data-type="contactform">
+            <div class="row">
+
+
+                <div class="col-md-12">
+                    <div class="form-group" style="text-align:left;">
+                        <i class="fas fa-3x  fa-edit mb-4" style="left: 4%; font-size: 18px; display: unset; margin-inline-end: 8px; position: relative; align-content: center; color: #ffcc00 "></i>
+                        <label class="label" for="NameofMajor" style="color: black;position:relative;left:4%">@Eng4You.Resources.Resource.Update_Section_Name_In_English</label>
+                        <input type="text" class="form-control" id="NameofMajor" name="NameofMajor" value="@Model.NameofMajor" style="border-radius: 20px;">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group" style="text-align:left;">
+                        <i class="fas fa-3x  fa-edit mb-4" style="left: 4%; font-size: 18px; display: unset; margin-inline-end: 8px; position: relative; align-content: center; color: #ffcc00 "></i>
+                        <label class="label" for="NameofMajorinArabic" style="color: black;position:relative;left:4%">@Eng4You.Resources.Resource.Update_Section_Name_In_English</label>
+                        <input type="text" class="form-control" id="NameofMajorinArabic" name="NameofMajorinArabic" value="@Model.NameofMajorinArabic" style="border-radius: 20px;">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group" style="text-align:left;">
+                        <i class="fas fa-3x  fa-edit mb-4" style="left: 4%; font-size: 18px; display: unset; margin-inline-end: 8px; position: relative; align-content: center; color: #ffcc00 "></i>
+                        <label class="label" for="NameofMajorinTurkish" style="color: black;position:relative;left:4%">@Eng4You.Resources.Resource.Update_Section_Name_In_English</label>
+                        <input type="text" class="form-control" id="NameofMajorinTurkish" name="NameofMajorinTurkish" value="@Model.NameofMajorinTurkish" style="border-radius: 20px;">
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12">
+                    <div class="form-group text-center">
+                        <!-- Icon and Label Container -->
+                        <div class="form-group" style="text-align:left;left:2%">
+                            <i class="fas fa-3x  fa-image  mb-4" style="left: 2%; font-size: 18px; display: unset; margin-inline-end: 8px; position: relative; align-content: center; color: #ffcc00"></i>
+                            <label class="label" for="UploadFile" style="color: black; position: relative; left: 2%">@Eng4You.Resources.Resource.Update_Image_Section</label>
+
+                            <br /><br />
+                            <!-- Display the selected image with specific dimensions -->
+                            <img id="previewImage" src="@Url.Content("~/Uploads/" + Model.MajorImage)" alt="Current Image" style="height: auto; max-height: 250px; max-width: 250px; display: @(string.IsNullOrEmpty(Model.MajorImage) ? "none" : "block")" class="mx-auto d-block" />
+                            <br />
+                            <!-- File input for updating image (optional) -->
+                            <input type="file" id="ImageFile" name="ImageFile" class="form-control" style="border:none;height:57px" onchange="previewFile()" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="submit" value="@Eng4You.Resources.Resource.Save" class="btn btn-default" style="background-color:#ffcc00;border-radius: 20px;font-weight:bold;color:black;font-size:20px;margin:auto;position:relative;width:100%;border: 3.5px outset #ffcc00" />
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include SweetAlert library -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+    
+                            
+        }
+
+        
+        <script src="~/js/update-image-major-in-edit.js"></script>

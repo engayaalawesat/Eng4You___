@@ -1,0 +1,162 @@
+﻿@model Eng4You.Models.AddBooks
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>AddBooks</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <div class="col-md-12">
+            <div class="form-group text-center">
+                <!-- Icon and Label Container -->
+                <div class="form-group" style="text-align:left;left:2%">
+                    <i class="fas fa-3x  fa-image  mb-4" style="left: 2%; font-size: 18px; display: unset; margin-inline-end: 8px; position: relative; align-content: center; color: #ffcc00"></i>
+                    <label class="label" for="UploadFile" style="color: black; position: relative; left: 2%">@Eng4You.Resources.Resource.Section_Image</label>
+
+                    <br /><br />
+                    <!-- Display the selected image with specific dimensions -->
+                    <img id="previewImageBookEN" src="@Url.Content("~/Uploads/" + Model.FrontBookImageinEnglish)" alt="Current Image" style="height: auto; max-height: 250px; max-width: 250px; display: @(string.IsNullOrEmpty(Model.FrontBookImageinEnglish) ? "none" : "block")" class="mx-auto d-block" />
+                    <br />
+                    <!-- File input for updating image (optional) -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-12">
+            <div class="form-group text-center">
+                <!-- Icon and Label Container -->
+                <div class="form-group" style="text-align:left;left:2%">
+                    <i class="fas fa-3x  fa-image  mb-4" style="left: 2%; font-size: 18px; display: unset; margin-inline-end: 8px; position: relative; align-content: center; color: #ffcc00"></i>
+                    <label class="label" for="UploadFile" style="color: black; position: relative; left: 2%">@Eng4You.Resources.Resource.Section_Image</label>
+
+                    <br /><br />
+                    <!-- Display the selected image with specific dimensions -->
+                    <img id="previewImageBookAR" src="@Url.Content("~/Uploads/" + Model.FrontBookImageinArabic)" alt="Current Image" style="height: auto; max-height: 250px; max-width: 250px; display: @(string.IsNullOrEmpty(Model.FrontBookImageinArabic) ? "none" : "block")" class="mx-auto d-block" />
+                    <br />
+                    <!-- File input for updating image (optional) -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="form-group text-center">
+                <!-- Icon and Label Container -->
+                <div class="form-group" style="text-align:left;left:2%">
+                    <i class="fas fa-3x  fa-image  mb-4" style="left: 2%; font-size: 18px; display: unset; margin-inline-end: 8px; position: relative; align-content: center; color: #ffcc00"></i>
+                    <label class="label" for="UploadFile" style="color: black; position: relative; left: 2%">@Eng4You.Resources.Resource.Section_Image</label>
+
+                    <br /><br />
+                    <!-- Display the selected image with specific dimensions -->
+                    <img id="previewImageBookTR" src="@Url.Content("~/Uploads/" + Model.FrontBookImageinTurkish)" alt="Current Image" style="height: auto; max-height: 250px; max-width: 250px; display: @(string.IsNullOrEmpty(Model.FrontBookImageinTurkish) ? "none" : "block")" class="mx-auto d-block" />
+                    <br />
+                    <!-- File input for updating image (optional) -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="form-group text-center">
+                <!-- Icon and Label Container -->
+                <div class="form-group" style="text-align:left;left:2%">
+                    <i class="fas fa-3x  fa-image  mb-4" style="left: 2%; font-size: 18px; display: unset; margin-inline-end: 8px; position: relative; align-content: center; color: #ffcc00"></i>
+                    <label class="label" for="UploadFile" style="color: black; position: relative; left: 2%">@Eng4You.Resources.Resource.Section_Image</label>
+
+                    <br /><br />
+                    <!-- Display the selected image with specific dimensions -->
+                    <img id="previewImageBookBack" src="@Url.Content("~/Uploads/" + Model.BackBookImage)" alt="Current Image" style="height: auto; max-height: 250px; max-width: 250px; display: @(string.IsNullOrEmpty(Model.BackBookImage) ? "none" : "block")" class="mx-auto d-block" />
+                    <br />
+                    <!-- File input for updating image (optional) -->
+                </div>
+            </div>
+        </div>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UrlSeeBookinEnglish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UrlSeeBookinEnglish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UrlSeeBookinArabic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UrlSeeBookinArabic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UrlSeeBookinTurkish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UrlSeeBookinTurkish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookDescriptioninEnglish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookDescriptioninEnglish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookDescriptioninArabic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookDescriptioninArabic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookDescriptioninTurkish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookDescriptioninTurkish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AoutherNameinEnglish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AoutherNameinEnglish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AoutherNameinArabic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AoutherNameinArabic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AoutherNameinTurkish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AoutherNameinTurkish)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

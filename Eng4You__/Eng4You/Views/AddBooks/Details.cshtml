@@ -1,0 +1,122 @@
+﻿@model Eng4You.Models.AddBooks
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AddBooks</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FrontBookImageinEnglish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FrontBookImageinEnglish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FrontBookImageinArabic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FrontBookImageinArabic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FrontBookImageinTurkish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FrontBookImageinTurkish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BackBookImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BackBookImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UrlSeeBookinEnglish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UrlSeeBookinEnglish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UrlSeeBookinArabic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UrlSeeBookinArabic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UrlSeeBookinTurkish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UrlSeeBookinTurkish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookDescriptioninEnglish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookDescriptioninEnglish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookDescriptioninArabic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookDescriptioninArabic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookDescriptioninTurkish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookDescriptioninTurkish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AoutherNameinEnglish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AoutherNameinEnglish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AoutherNameinArabic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AoutherNameinArabic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AoutherNameinTurkish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AoutherNameinTurkish)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

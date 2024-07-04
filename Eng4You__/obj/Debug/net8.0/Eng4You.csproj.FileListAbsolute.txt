@@ -1,0 +1,11 @@
+C:\Users\Aya AL_Awesat\source\repos\Eng4You\obj\Debug\net8.0\Eng4You.Eng4You.Resources.Resource-ar.resources
+C:\Users\Aya AL_Awesat\source\repos\Eng4You\obj\Debug\net8.0\Eng4You.Eng4You.Resources.Resource-en.resources
+C:\Users\Aya AL_Awesat\source\repos\Eng4You\obj\Debug\net8.0\Eng4You.Eng4You.Resources.Resource-tr.resources
+C:\Users\Aya AL_Awesat\source\repos\Eng4You\obj\Debug\net8.0\Eng4You.csproj.GenerateResource.cache
+C:\Users\Aya AL_Awesat\source\repos\Eng4You\obj\Debug\net8.0\Eng4You.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aya AL_Awesat\source\repos\Eng4You\obj\Debug\net8.0\Eng4You.AssemblyInfoInputs.cache
+C:\Users\Aya AL_Awesat\source\repos\Eng4You\obj\Debug\net8.0\Eng4You.AssemblyInfo.cs
+C:\Users\Aya AL_Awesat\source\repos\Eng4You\obj\Debug\net8.0\Eng4You.csproj.CoreCompileInputs.cache
+C:\Users\Aya AL_Awesat\source\repos\Eng4You\obj\Debug\net8.0\Eng4You.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aya AL_Awesat\source\repos\Eng4You\obj\Debug\net8.0\Eng4You.RazorAssemblyInfo.cache
+C:\Users\Aya AL_Awesat\source\repos\Eng4You\obj\Debug\net8.0\Eng4You.RazorAssemblyInfo.cs

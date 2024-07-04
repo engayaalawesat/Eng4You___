@@ -1,0 +1,38 @@
+﻿@model Eng4You.Models.NameSectionofProgram
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>NameSectionofProgram</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <div class="col-md-12">
+        <div class="form-group" style="text-align:left;">
+            <i class="fas fa-3x  fa-list-alt text-primary mb-4" style="left:2%;font-size: 18px; display: unset; margin-inline-end: 8px; position: relative; align-content: center; "></i>
+            <label class="label" for="NameSectonofProgram" style="color: black; position: relative; left: 2%">NameSectonofProgram</label>
+            <textarea required name="NameSectonofProgram" class="form-control" id="NameSectonofProgram" cols="30" rows="4" placeholder="ex: Software Engineering" style=" border-radius: 20px ; height:140px;resize:none"></textarea>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

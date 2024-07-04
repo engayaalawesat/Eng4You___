@@ -1,0 +1,39 @@
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cover {
+    width: 100%;
+}
+
+.header-content {
+    animation: fadeInRightBig 1s;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        left: 5%;
+    }
+
+    .line {
+        left: 0;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-content {
+        left: 2%;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}

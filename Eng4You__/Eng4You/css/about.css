@@ -1,0 +1,283 @@
+/*-- Team page --*/
+.team-slide .slick-slide {
+    margin-left: 25px;
+    padding-bottom: 60px;
+}
+
+.team-slide .slick-list {
+    margin-left: -25px;
+}
+
+.team-slide .carousel-control {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border: 0;
+    background-color: #ddd;
+    height: 37px;
+    width: 37px;
+    border-radius: 4px;
+    transition: 0.3s;
+    z-index: 6;
+}
+
+    .team-slide .carousel-control:hover {
+        background-color: #ffb600;
+        color: #fff;
+    }
+
+    .team-slide .carousel-control.left {
+        transform: translateX(calc(-50% - 25px));
+    }
+
+    .team-slide .carousel-control.right {
+        transform: translateX(calc(-50% + 25px));
+    }
+
+    .team-slide .carousel-control.slick-disabled {
+        opacity: 0.4;
+    }
+
+        .team-slide .carousel-control.slick-disabled:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+.ts-team-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+    .ts-team-wrapper .ts-team-content {
+        position: absolute;
+        top: 76%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 15px 25px;
+        margin-top: 0;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+        transition: 350ms;
+    }
+
+@media (max-width: 1200px) {
+    .ts-team-wrapper .ts-team-content {
+        top: 72%;
+    }
+}
+
+@media (max-width: 575px) {
+    .ts-team-wrapper .ts-team-content {
+        text-align: center;
+    }
+}
+
+.ts-team-wrapper .ts-name {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    line-height: normal;
+    color: #ffb600;
+}
+
+.ts-team-wrapper .ts-designation {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.ts-team-wrapper .team-social-icons a i {
+    color: #fff;
+    margin-right: 8px;
+    text-align: center;
+    transition: 400ms;
+}
+
+    .ts-team-wrapper .team-social-icons a i:hover {
+        color: #ffb600;
+    }
+
+.ts-team-wrapper:hover .ts-team-content {
+    top: 0;
+    padding-top: 50px;
+}
+
+/* Team Classic */
+.ts-team-content-classic {
+    margin-top: 15px;
+}
+
+    .ts-team-content-classic .ts-name {
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: #212121;
+    }
+
+    .ts-team-content-classic .ts-designation {
+        color: #888;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .ts-team-content-classic .team-social-icons a i {
+        color: #999;
+    }
+
+        .ts-team-content-classic .team-social-icons a i:hover {
+            color: #ffb600;
+        }
+
+.wrapper .title {
+    text-align: center;
+}
+
+.title h4 {
+    padding: 1%;
+    color: #000;
+    font-size: 4vw;
+    font-weight: bolder;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+@media (max-width: 1200px) {
+    .title h4 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .title h4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .title h4 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .title h4 {
+        font-size: 1.75rem;
+    }
+}
+
+.team1 {
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    font-weight: 300;
+}
+
+    .team1 h1, .team1 h2, .team1 h3, .team1 h4, .team1 h5, .team1 h6 {
+        color: #3e4555;
+        font-size: 22px;
+    }
+
+    .team1 p {
+        font-size: 16px;
+    }
+
+    .team1 .font-weight-medium {
+        font-weight: 500;
+    }
+
+    .team1 .bg-light {
+        background-color: #f4f8fa !important;
+    }
+
+    .team1 .subtitle {
+        color: #8d97ad;
+        line-height: 24px;
+    }
+
+    .team1 .pro-pic {
+        min-height: 200px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+/* Additional Media Queries for Better Responsiveness */
+@media (max-width: 991.98px) {
+    .pro-pic {
+        min-height: 180px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pro-pic {
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .pro-pic {
+        min-height: 140px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .card-img-overlay ul {
+        padding-left: 0;
+        text-align: center;
+    }
+
+        .card-img-overlay ul li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+}
+
+/* Ensure card height adapts to content and screen size */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .card .row {
+        flex: 1;
+    }
+
+/* New rules for responsive and resizable image */
+.col-md-5 {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.pro-pic {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 991.98px) {
+    .pro-pic {
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pro-pic {
+        border-radius: 10px;
+        background-size: cover; 
+    }
+}
+
+@media (max-width: 575.98px) {
+    .pro-pic {
+        border-radius: 5px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,43 @@
+.swal-overlay--show-modal .swal-modal {
+    opacity: 1;
+    pointer-events: auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+    -webkit-animation: showSweetAlert .3s;
+    animation: showSweetAlert .3s;
+    will-change: transform;
+}
+
+.swal-button {
+    background-color: #FFCC00;
+    position: center;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #FFCC00;
+    border-width: 5px;
+    color: black;
+}
+
+
+
+.swal-overlay {
+    background-color: #ffc10740;
+}
+
+.swal-button:not([disabled]):hover {
+    background-color: #ffc10740;
+}
+
+.swal-button:focus {
+    box-shadow: none;
+}
+
+.swal-title {
+    color: black;
+}
+
+.swal-button-container {
+    padding-right: 180px;
+    padding-top: 5px;
+    text-align: center;
+}
